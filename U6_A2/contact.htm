@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+
+    <title>Celtec Games - Contact Us</title>
+
+    <link rel="icon" type="image/x-icon" href="Images/CeltecLogo.png">
+
+    <link href="styles.css" rel="stylesheet" type="text/css">
+
+    <meta charset="UTF-8">
+    <meta name="description" content="The number 1 Video Game development company!">
+    <meta name="keywords" content="Gaming, Celtec, Celtec Games, Celtec Studios">
+    <meta name="author" content="Celtec Games">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <body>
+
+  </head>
+
+
+
+      <header align="right" color: solid #0B0B0B>
+
+      <!-- Celtec logo and image in nav bar, as well as link to home page -->
+
+        <div class="logo-container">
+
+          <a href="index.htm">
+
+            <img class="logo" src="Images\CeltecLogo.png" width="100px" height="100px" align="left" margin="auto" alt="Image of the Celtec Logo" />
+
+            <img class="logo-text" src="Images\CeltecGamesLogoText.png" width="200px" height="100px" align="left" alt="Image of the text accompanied by the Celtec Logo" />
+
+          </a>
+
+        </div>
+
+    <nav>
+
+      <!-- Code for navigation bar and links -->
+
+
+      <h2>
+        <a href="index.htm" style="text-decoration:none;">Homepage</a>    |
+        <a href="blog.htm" style="text-decoration:none;">Our Blog</a>    |
+        <a href="aboutus.htm" style="text-decoration:none;">About Us</a>    |
+        <a href="products.htm" style="text-decoration:none;">Our Products</a>    |  
+        <a href="contact.htm" style="text-decoration:none;">Contact Us</a>    |
+      </h2>
+
+    </nav>
+
+  </header>
+
+
+<!-- Image, text for image and container -->
+
+  <div class="container">
+    <div class="celtec-text"><b>Have Any Questions?</b></div>
+    <div class="celtectext"><b>Reach Out To Us About Your Issues By Filling Out Our Form</b></div>
+    <img src="Images\CeltecGames.png" width="1800px" height="900px" alt:"The exterior of the Celtec Games building">
+  </div>
+
+<p><br></p>
+
+<!-- Code for creating form and its elements -->
+
+<form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+  <div class="form-container">
+    <h1 align="center" style="color: white;"><b>Contact Us</b></h1>
+    <p align="center" style="color: white; font-size: 20px;">If you have any questions, please fill out this form and tell us your issue.</p>
+    <hr>
+
+      <h2 align="center" style="color: white;">
+      <label for="name"><b>Name</b></label><br>
+      <input style="width: 300px;" type="text" placeholder="Enter Name" name="name" id="name" minlength="3" maxlength="30" required><br><br>
+
+
+      <label for="email"><b>Email</b></label><br>
+      <input style="width: 300px;" type="text" placeholder="Enter Email" name="email" id="email" minlength="3" maxlength="30" required><br><br>
+
+    
+      <label for="telnum"><b>Phone Number</b></label><br>
+      <input style="width: 300px;" type="text" placeholder="Enter Phone Number" name="telnum" id="telnum" min="4" max="13" required><br><br>
+
+      <label for="telnum"><b>Comments</b></label><br>
+      <input style="width: 450px;" type="text" placeholder="Enter Your Inquiries" name="inquiries" id="inquiries" maxlength="500" required><br>
+
+      <label for="accept" align="center"><p style="color: white; font-size: 20px;">I agree to Celtec Games Terms Of Conditions</p></label>
+      <input type="checkbox" id="accept" name="accept" value="no">
+
+
+      </h2>
+    
+    <button type="submit" class="buttonsubmit" style="width: 200px; height: 100px; background: linear-gradient(180deg, #ED2939, #D21F3C); 
+    display: block; margin: auto; border: 5px transparent; border-radius: 25px; color: white; font-size: 35px;">Submit</button>
+    <p><br></p>
+  </div>
+
+
+<!-- Javascript code for checking whether the checkbox is set to true or false -->
+
+<script>
+        const checked = document.querySelector('#accept:checked') !== null;
+        console.log(checked); // false;
+ 
+document.addEventListener("DOMContentLoaded", function () {
+    const form = document.querySelector("form");
+    const checkbox = document.getElementById("accept");
+    
+form.addEventListener("submit", function (event) {
+    if (!checkbox.checked) {
+        event.preventDefault();
+        alert("It is required to accept Celtec Games' Terms And Conditions before proceeding.");
+        }
+    });
+});
+
+</script>
+
+
+
+<pre></pre>
+
+<footer>
+  <p class="copyright" text-align="center" style="font-size: 15px;">© Celtec Games 2025 | All Rights Reserved | <a href="contact.htm" style="text-decoration:none;"><b><u>Contact Us</b></u></a></p>
+</footer>
+
+
+
+
+</body>
+
+</html>
